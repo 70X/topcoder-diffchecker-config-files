@@ -1,0 +1,73 @@
+{
+  "source": [
+    "This part of the",
+    "document has stayed the",
+    "same from version to",
+    "version.",
+    "",
+    "This paragraph contains",
+    "text that is outdated.sonia",
+    "",
+    "It is important to spell",
+    "check this dokument. On check this dokument. On check this dokument. On check this dokument. On check this dokument. On check this dokument. On check this dokument. On check this dokument. On check this dokument. On",
+    "the other hand, a",
+    "misspelled word isn't",
+    "the end of the world.",
+    "It is important to spell",
+    "check this document. On",
+    "the other hand, a",
+    "misspelled word isn't",
+    "the end of the world.",
+    "It is important to spell",
+    "check this document. On",
+    "the other hand, a",
+    "misspelled word isn't",
+    "the end of the world."
+  ],
+
+  "target": [
+    "This is an important",
+    "notice! It should",
+    "therefore be located at",
+    "the beginning of this",
+    "document!",
+    "",
+    "This part of the",
+    "document has stayed the",
+    "same from version to",
+    "version.",
+    "",
+    "It is important to spell",
+    "check this document. On",
+    "the other hand, a",
+    "misspelled word isn't",
+    "the end of the world.",
+    "It is important to spell",
+    "check this document. On",
+    "the other hand, a",
+    "misspelled word isn't",
+    "the end of the world.",
+    "It is important to spell",
+    "check this document. On",
+    "the other hand, a",
+    "misspelled word isn't",
+    "the end of the world."
+  ],
+  "diff": [
+    {
+      "source": "0",
+      "target": "0,5",
+      "action": "a"
+    },
+    {
+      "source": "4,6",
+      "target": "10",
+      "action": "d"
+    },
+    {
+      "source": "9",
+      "target": "12",
+      "action": "c"
+    }
+  ]
+}

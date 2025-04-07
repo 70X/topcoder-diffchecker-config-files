@@ -1,0 +1,15 @@
+.network-working-filters{
+  margin: 10px;
+
+  &__filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__filter{
+    flex: 2;
+  }
+  &__group{
+    margin: 15px 0 5px 10px;
+  }
+}

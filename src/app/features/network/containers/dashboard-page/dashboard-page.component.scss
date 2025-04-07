@@ -1,0 +1,16 @@
+.dashboard{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__body{
+    margin: 10px;
+    display: block;
+    border-radius: 5px;
+    background: white;
+    height: calc(100% - 90px);
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="network-diff-window" #scrollElement (scroll)="performScroll($event)">
+  <div class="network-diff-window__line" *ngFor="let line of file.lines; let i = index;" [ngClass]="{
+      'network-diff-window__line--blank': !line,
+      'network-diff-window__line--select': select === i && highlightText,
+      'network-diff-window__line--add': line?.action === ActionType.ADD,
+      'network-diff-window__line--delete': line?.action === ActionType.DELETE,
+      'network-diff-window__line--change': line?.action === ActionType.CHANGE
+    }">
+
+    <span class="network-diff-window__number" [ngClass]="{'network-diff-window__number--empty': !line }">
+      {{ line?.position || 0}}
+      <span *ngIf="line?.action === ActionType.ADD">+</span>
+      <span *ngIf="line?.action === ActionType.DELETE">-</span>
+      <span *ngIf="line?.action === ActionType.CHANGE">*</span>
+    </span>
+    <span class="network-diff-window__text" [innerHTML]="line?.text | highlight : highlightText"></span>
+  </div>
+</div>

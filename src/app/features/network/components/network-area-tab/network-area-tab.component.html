@@ -1,0 +1,10 @@
+<div class="network-area-tab">
+  <button *ngIf="withBack" mat-button class="network-area-tab__back" (click)="goBack.emit()">
+    <span class="material-icons">arrow_back_ios</span>
+    <span>{{ tooltip }}</span>
+  </button>
+  <h1 class="network-area-tab__title">{{ title }}</h1>
+  <button *ngIf="withReset" (click)="reset.emit()" class="network-area-tab__reset" matTooltip="Reset documents to original files" mat-mini-fab color="primary" mat-button aria-label="Reset documents to original files">
+    <span class="material-icons">close</span>
+  </button>
+</div>

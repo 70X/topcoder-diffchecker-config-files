@@ -1,0 +1,63 @@
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1.1rem;
+}
+
+/******* FORM / INPUT ********/
+
+.generic-form {
+
+    &__multiple {
+        margin: 0 -5px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &__item {
+        margin: 0 5px;
+        flex: 1;
+    }
+
+    &__group {
+        width: 100%;
+        position: relative;
+        font-size: 1rem;
+        margin: 15px 0 5px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 4px 6px 1px;
+
+        &:hover {
+            border-color: #2e4872;
+        }
+    }
+
+    &__label {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #2e4872;
+    }
+
+    &__textarea,
+    &__select,
+    &__input {
+        border: none;
+        color: #2e4872;
+        line-height: 1.3rem;
+        width: 100%;
+    }
+
+    &__textarea {
+        resize: vertical;
+    }
+
+    &__select {
+        margin: 0 -5px;
+    }
+
+}

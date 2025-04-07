@@ -1,0 +1,12 @@
+<div class='network-area'>
+  <her-loading-spinner *ngIf="loading"></her-loading-spinner>
+  <ng-container *ngIf="view === ViewType.FILES">
+    <her-network-area-tab class="network-area__tab" [withBack]="!!originFiles" [withReset]="false" (goBack)="view = ViewType.WORKING_AREA" tooltip="Working area" title="Upload Files"></her-network-area-tab>
+    <her-network-files-upload [files]="originFiles" (filesUpload)="filesUpload($event)"></her-network-files-upload>
+  </ng-container>
+  <ng-container *ngIf="view === ViewType.WORKING_AREA">
+    <her-network-area-tab class="network-area__tab" [withBack]="true" [withReset]="true" (goBack)="view = ViewType.FILES" (reset)="resetData()" tooltip="Upload new files" title="Working Area"></her-network-area-tab>
+    <her-network-working-view [files]="currentFiles" (filterIn)="filterIn($event)" (filterOut)="filterOut($event)">
+    </her-network-working-view>
+  </ng-container>
+</div>

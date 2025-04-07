@@ -1,0 +1,17 @@
+<div class="network-working-filters">
+  <div class="network-working-filters__filters-container">
+    <her-form-input-text class="network-working-filters__filter" [control]="inputFilterIn" label='Filter In'
+      placeholder='search multiple lines with comma' (keyup.enter)="applyFilterIn()"></her-form-input-text>
+    <button class="network-working-filters__group" mat-raised-button color="primary"  (click)="applyFilterIn()">Apply</button>
+  </div>
+  <div class="network-working-filters__filters-container">
+    <her-form-input-text class="network-working-filters__filter" [control]="inputFilterOut" label='Filter Out'
+    placeholder='search multiple lines with comma' (keyup.enter)="applyFilterOut()"></her-form-input-text>
+    <button class="network-working-filters__group" mat-raised-button color="primary"  (click)="applyFilterOut()">Apply</button>
+  </div>
+  <div class="network-working-filters__filters-container">
+    <her-form-input-text class="network-working-filters__filter" [control]="inputSearch" label='Search by text' (keyup.enter)="applySearch()">
+    </her-form-input-text>
+    <button class="network-working-filters__group" mat-raised-button color="primary"  (click)="applySearch()">Apply</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.network-working-view {
+  height: calc(100% - 55px);
+
+  &__files {
+    height: calc(100% - 208px);
+  }
+
+  &__control {
+    width: 100%;
+    background: rgb(75, 75, 75);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__diff-control{
+    margin-left: 10px;
+  }
+  &__search-control{
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,4 @@
+<div class="network-working-files">
+  <her-network-diff-window class="network-working-files__window" [highlightText]="highlightText" [file]="files.source" [selectLine]="selectLine" [scrollTo]="sourceScrollTo" (scroll)="targetScrollTo = $event"></her-network-diff-window>
+  <her-network-diff-window class="network-working-files__window" [highlightText]="highlightText" [file]="files.target" [selectLine]="selectLine" [scrollTo]="targetScrollTo" (scroll)="sourceScrollTo = $event"></her-network-diff-window>
+</div>

@@ -1,0 +1,44 @@
+.network-diff-window{
+  border: 1px solid gray;
+  height: 100%;
+  overflow: scroll;
+  
+  &__line{
+    display: table-row;
+    height: 27px;
+    width: 100%;
+    white-space: nowrap;
+    &--add{
+      background: #c1e4b27d;
+    }
+    &--delete{
+      background: #e4b5b27d;
+    }
+    &--change{
+      background: #bab2e47d;
+    }
+    &--blank{
+      background: gray;
+    }
+    &--select{
+      background: #15505f33;
+    }
+  }
+  &__number{
+    width: 40px;
+    z-index: 1;
+    border-right: 1px solid gray;
+    padding: 5px 0 5px 2px;
+    background: #eaeaea;
+    display: inline-block;
+    &--empty{
+      color: transparent;
+    }
+  }
+  &__text{
+    margin-left: 5px;
+    padding: 5px 0;
+    width: calc(100% - 45px);
+    display: inline-block;
+  }
+}

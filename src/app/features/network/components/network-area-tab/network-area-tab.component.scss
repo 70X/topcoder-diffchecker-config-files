@@ -1,0 +1,18 @@
+.network-area-tab{
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  
+  &__back{
+    position: absolute;
+    left: 3px;
+  }
+  &__reset{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+  }
+  &__title{
+    text-align: center;
+  }
+}

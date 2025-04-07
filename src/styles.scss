@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/styles/reset.scss";
+@import "assets/styles/palette.scss";
+@import "assets/styles/loading.scss";
+@import "assets/styles/inputs.scss";
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $background;
+}
+
+.mat-snackbar-success {
+  background-color: $success;
+}
+.mat-snackbar-error {
+  background-color: $error;
+}
+.mat-snackbar-warning {
+  background-color: $warning;
+}
+.mat-snackbar-info {
+  background-color: $info;
+}
+.mat-simple-snackbar-action {
+  color: inherit;
+}
+.mat-snack-bar-container{
+  color: white
+}

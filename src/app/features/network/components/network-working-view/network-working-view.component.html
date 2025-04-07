@@ -1,0 +1,17 @@
+<div class="network-working-view">
+  <her-network-working-filters [files]="files" (search)="applySearch($event)" (filterIn)="filterIn.emit($event)"
+    (filterOut)="filterOut.emit($event)">
+  </her-network-working-filters>
+
+  <div class="network-working-view__files">
+    <div class="network-working-view__control">
+      <her-occurrences-control class="network-working-view__diff-control" label='Changes' [current]="currentChangeLine"
+        [total]="files.diffList.length" (next)="changeNext()" (prev)="changePrev()"></her-occurrences-control>
+      <her-occurrences-control class="network-working-view__search-control" *ngIf='inputSearch' label='Search'
+        [current]="currentSearchLine" [total]="searchPosList?.length" (next)="searchNext()" (prev)="searchPrev()">
+      </her-occurrences-control>
+    </div>
+    <her-network-working-files [files]="files" [highlightText]="inputSearch" [selectLine]="selectLine">
+    </her-network-working-files>
+  </div>
+</div>

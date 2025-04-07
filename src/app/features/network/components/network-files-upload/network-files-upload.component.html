@@ -1,0 +1,7 @@
+<div class="network-files-upload">
+  <div class="network-files-upload__container">
+    <her-network-file-upload-button class="network-files-upload__upload" label="Source" [path]="files?.source.filePath.name" (toUpload)="uploadSource($event)"></her-network-file-upload-button>
+    <her-network-file-upload-button class="network-files-upload__upload" label="Target" [path]="files?.target.filePath.name" (toUpload)="uploadTarget($event)"></her-network-file-upload-button>
+  </div>
+  <button mat-raised-button color="primary" (click)="upload()">Upload</button>
+</div>

@@ -1,0 +1,11 @@
+<div class="network-file-upload-button">
+  <input #fileSelector type="file" [hidden]="true" (change)="upload($event)" />
+  <div class="network-file-upload-button__filename"
+    [ngClass]="{'network-file-upload-button__filename--no-file': !fileSelector.value }">
+    {{ path || (fileSelector.value || 'No File Chosen') }}
+  </div>
+  <div class="network-file-upload-button__button" (click)="$event.preventDefault(); fileSelector.click()">
+    <span *ngIf="path">Replace</span>
+    <span>{{ label }}</span>
+  </div>
+</div>

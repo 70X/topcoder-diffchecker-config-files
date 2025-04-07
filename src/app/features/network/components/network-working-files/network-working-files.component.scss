@@ -1,0 +1,9 @@
+.network-working-files{
+  display: flex;
+  height: calc(100% - 36px);
+
+  &__window{
+    height: 100%;
+    width: 50%;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="occurrences-control">
+  <span>{{ label }}:&nbsp;</span>
+  <ng-container *ngIf="current != null; else noResults">
+    <span>{{ current }} of {{ total }}</span>
+    <button mat-button (click)="next.emit()">
+      <span class="material-icons">arrow_downward</span>
+    </button>
+    <button mat-button (click)="prev.emit()">
+      <span class="material-icons">arrow_upward</span>
+    </button>
+  </ng-container>
+  <ng-template #noResults>
+    <span>No Results</span>
+  </ng-template>
+</div>
